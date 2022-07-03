@@ -1,20 +1,11 @@
-// // Number of categories, 3
 const list = document.querySelector('#categories');
-console.log(`Number of categories: ${list.children.length}`);
+const categories = list.children;
 
-// // Category: Animals, 4
-const item = document.querySelector('.item');
-console.log(`Category: ${item.firstElementChild.textContent}`);
-console.log(`Elements: ${item.lastElementChild.children.length}`);
+console.log(`Number of categories: ${categories.length}`);
 
-// Category: Products, 3
-console.log(`Category: ${item.nextElementSibling.firstElementChild.textContent}`);
-console.log(`Elements: ${item.nextElementSibling.lastElementChild.children.length}`);
+for (let i = 0; i < categories.length; i += 1) {
+  const item = categories[i];
 
-// Category: Technologies, 5
-console.log(
-  `Category: ${item.nextElementSibling.nextElementSibling.firstElementChild.textContent}`,
-);
-console.log(
-  `Elements: ${item.nextElementSibling.nextElementSibling.lastElementChild.children.length}`,
-);
+  console.log(`Category: ${item.firstElementChild.textContent}`);
+  console.log(`Elements: ${item.lastElementChild.children.length}`);
+}

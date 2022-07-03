@@ -12,19 +12,3 @@ const elements = ingredients.map(element => {
 
 listOfIngredients.append(...elements);
 console.log(listOfIngredients);
-
-// Метод 2
-
-// const newArray = [];
-
-// for (let i = 0; i < ingredients.length; i += 1) {
-//   const element = ingredients[i];
-
-//   const ingredientsItem = document.createElement('li');
-//   ingredientsItem.textContent = element;
-//   ingredientsItem.classList.add('item');
-//   newArray.push(ingredientsItem);
-// }
-
-// listOfIngredients.append(...newArray);
-// console.log(listOfIngredients);

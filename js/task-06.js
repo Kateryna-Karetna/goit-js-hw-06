@@ -2,7 +2,9 @@ const input = document.querySelector('#validation-input');
 
 input.addEventListener('blur', event => {
   if (event.currentTarget.value.length !== Number(input.getAttribute('data-length'))) {
-    return input.classList.add('invalid');
+    input.classList.add('invalid');
+    input.classList.remove('valid');
+  } else {
+    input.classList.replace('invalid', 'valid');
   }
-  return input.classList.replace('invalid', 'valid');
 });

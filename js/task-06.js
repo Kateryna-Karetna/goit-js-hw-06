@@ -5,6 +5,7 @@ input.addEventListener('blur', event => {
     input.classList.add('invalid');
     input.classList.remove('valid');
   } else {
-    input.classList.replace('invalid', 'valid');
+    input.classList.toggle('valid');
+    input.classList.remove('invalid');
   }
 });

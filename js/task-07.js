@@ -6,6 +6,5 @@ span.style.fontSize = value;
 
 input.addEventListener('input', event => {
   const value = event.currentTarget.value + 'px';
-  event.currentTarget.value !== Number(input.value);
   span.style.fontSize = value;
 });
